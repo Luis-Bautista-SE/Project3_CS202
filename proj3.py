@@ -151,7 +151,7 @@ def generate_codes(node: Node | None, prefix="", code: dict | None =None)-> dict
     #Traverse the tree to generate a huffman encoding
     # the huffman encoding will be a dictionary char:encoding pairs
     #if node is Node return code
-    #if node has a char, then code[node.char] = prefix
+    #if node is a leaf, then code[node.char] = prefix
     #recursively calls generate_codes on the left, with prefix + "0" and code
     #recursively calls generate_codes on the right, with prefix + "1" and code
     #returns the code dictionary
