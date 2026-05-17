@@ -18,7 +18,7 @@ class TestRegionFunctions(unittest.TestCase):
         ])
         result = insert(heap, Node(1, "c"))
         self.assertEqual(result.data[0].freq, 1)
-
+        self.assertEqual([], [])
     def test_heapify_down(self):
         heap = MinHeap([
             Node(10, "a"),
